@@ -12,19 +12,77 @@
     <title>課程</title>
 </head>
 <body>
-    <table>
-        <thead>
-            <th>課程名稱</th>
-            <th>介紹</th>
-            <th>連結</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>html 1</td>
-                <td>html基本標籤</td>
-                <td><a href="#">按這裡</a></td>
-            </tr>
-        </tbody>
-    </table>
+    <!-- nav -->
+    <div class="nav">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a href="#" style="text-decoration: none; color: black; width: 100px;">e 起學程式 1x school</a>
+            <button type="button" class="navbar-toggler" beta-bs-toggle="collapse" deta-bs-target="#navDropdown2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- ul -->
+            <div class="collapse navbar-collapse" id="navDropdown2">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=" https://networkkenny.github.io/1x-scool.github.io/1x school/class.html">熱門課程</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">架站知識</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">關於我們</a>
+                    </li>
+                    
+                    <!-- 下拉式選單 Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">bootstrap</a>
+    
+                        <!-- 下拉式選單選項 Dropdown items -->
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">簡介</a></li>
+                            <li><a class="dropdown-item" href="#">使用</a></li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">程式</a>
+    
+                                <!-- 子選單Level 2 -->
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">class</a></li>
+                                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">運作原理</a>
+    
+                                        <!-- 子選單Level 3 -->
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">1</a></li>
+                                            <li><a class="dropdown-item" href="#">2</a></li>
+    
+                                    </li>
+                                    </ul>
+                            </li>
+                            </ul>
+    
+                            
+                    </li>
+                    
+                </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="p">
+        <table>
+            <thead>
+                <th>課程名稱</th>
+                <th>介紹</th>
+                <th>連結</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>html 1</td>
+                    <td>html基本標籤</td>
+                    <td><a href="#">按這裡</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>    
 </body>
 </html>
