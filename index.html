@@ -11,6 +11,14 @@
     <!-- ^JavaScript -->
     <!-- css -->
     <link rel="stylesheet" href="css/index.css">
+    <!-- AOS -->
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- isotope -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
     <title>1x school</title>
     <!-- easy css -->
     <style>
@@ -94,17 +102,80 @@
     </div>
     <div class="all-md" style="display: flex;">
         <div class="col-md-4">
-            <img src="1x school/img/solution-01.png" alt="">
-            <p style="font-size: 30px; margin-left: 170px;">有系統的教學</p>
+            <img src="img/solution-01.png" alt="" width="400px">
+            <p style="font-size: 30px; margin-left: 150px;">有系統的教學</p>
         </div>
         <div class="col-md-4">
-            <img src="1x school/img/5e9ff152a9ffe65954ab249d.png" alt="">
-            <p style="font-size: 30px; margin-left: 170px;">淺顯易懂</p>
+            <img src="img/5e9ff152a9ffe65954ab249d.png" alt="" width="300px" height="310px" style="margin-left: 50px;">
+            <p style="font-size: 30px; margin-left: 150px;">淺顯易懂</p>
         </div>
         <div class="col-md-4">
-            <img src="img/solution-01.png" alt="">
-            <p style="font-size: 30px; margin-left: 170px;">有系統的教學</p>
+            <img src="img/下載.jpg" alt="" width="440px" height="310px">
+            <p style="font-size: 30px; margin-left: 170px;">自製教材</p>
         </div>
     </div>
+    <div class="container">
+        <div class="box" data-aos="zoom-in">
+            <img src="img/0.jpg" alt="">
+            <div class="box-menu">
+                
+                <h3>帶你學到會</h3>
+                <p>線上學習人數已達100000人</p>
+                <a href="#">來去看看</a>
+            </div>
+        </div>
+        <div class="box" data-aos="fade-up">
+            <img src="img/html1.jpg" alt="">
+            <div class="box-menu" >
+                
+                <h3>html</h3>
+                <p>建造網頁架構</p>
+                <a href="#">來去看看</a>
+            </div>
+        </div>
+        <div class="box" data-aos="fade-right">
+            <img src="img/css1.jpg" alt="">
+            <div class="box-menu" >
+                
+                <h3>css</h3>
+                <p>美化您的網頁</p>
+                <a href="#">來去看看</a>
+            </div>
+        </div>
+        <div class="box" data-aos="flip-right">
+            <img src="img/1_kv85A-q8mqKQW56x8vrn7g.gif" alt="">
+            <div class="box-menu" >
+                
+                <h3>JavaScript</h3>
+                <p>讓網頁栩栩如生</p>
+                <a href="#">來去看看</a>
+            </div>
+        </div>
+    </div>
+    <div class="filters">
+        <h4>課程</h4>
+        <button class="button" data-filter=".html">HTML</button>
+        <button class="button" data-filter=".css">CSS</button>
+        <button class="button" data-filter=".js">JavaScript</button>
+
+    </div>
+    <!-- pic -->
+    <div class="grid">
+        <div class="items html"><img src="img/html1.jpg" alt=""></div>
+        <div class="items js"><img src="img/javascript1.png" alt=""></div>
+        <div class="items html"><img src="img/html2.png" alt=""></div>
+        <div class="items css"><img src="img/css1.jpg" alt=""></div>
+        <div class="items js"><img src="img/javascript2.jpg" alt=""></div>
+        <div class="items css"><img src="img/css2.jpeg" alt=""></div>
+        <div class="items html"><img src="img/html3.png" alt=""></div>
+        <div class="items css"><img src="img/css3.jpg" alt=""></div>
+        <div class="items js"><img src="img/javascript3.jpg" alt=""></div>
+    </div>
 </body>
+<script>
+    AOS.init({
+        duration: 1000,
+    });
+</script>
+<script src="js/isotope.js"></script>
 </html>
