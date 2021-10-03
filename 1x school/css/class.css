@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(168, 164, 164);
+}
+nav{
+    width: 1600px;
+    background-color: purple;
+}
+nav div ul li a{
+    color: yellow;
+}
+table{
+    border: 1px solid rgb(68, 63, 63);
+}
+thead{
+    background-color: brown;
+}
+table thead th{
+    color: white;
+}
