@@ -1,5 +1,37 @@
+*{
+    color: rgb(175, 166, 166);
+    padding: 0;
+    margin: 0;
+}
 body{
-    background-color: white;
+    background-color: rgb(60,60,60);
+    height: 100vh;
+}
+.container-clock{
+    background-color: transparent;
+    border: 3px solid lightgreen;
+    width: 340px;
+    padding: 20px;
+    border-radius: 40px;
+    transition: 0.5s;
+}
+.container-clock:hover{
+    background-color: lightgreen;
+    color: black;
+    box-shadow: 0 0 30px lightgreen;
+}
+.time{
+    font-size: 40px;
+    font-weight: 600px;
+    text-align: center;
+}
+.date{
+    font-size: 20px;
+    text-align: center;
+    font-style: initial;
+}
+#period{
+    font-size: 20px;
 }
 .jumbotron{
     padding: 2rem 1rem;
