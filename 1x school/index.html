@@ -9,6 +9,7 @@
     <!-- ^css -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <!-- ^JavaScript -->
+    
     <!-- css -->
     <link rel="stylesheet" href="css/index.css">
     <!-- AOS -->
@@ -38,7 +39,7 @@
         }
     </style>
 </head>
-<body>
+<body onload="startTime()">
     <!-- nav -->
     <div class="nav">
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -155,8 +156,8 @@
     <div class="container">
         <h3>架站小工具</h3>
         <ul>
-            <li><a href="getbootstrap.com">bootstrap</a></li>
-            <li><a href="cdnjs.com">cdn</a></li>
+            <li><a href="https://www.getbootstrap.com" target="_blank">bootstrap</a></li>
+            <li><a href="https://www.cdnjs.com" target="_blank">cdn</a></li>
         </ul>
     </div>
     <div class="filters">
@@ -177,6 +178,25 @@
         <div class="items html"><img src="img/html3.png" alt=""></div>
         <div class="items css"><img src="img/css3.jpg" alt=""></div>
         <div class="items js"><img src="img/javascript3.jpg" alt=""></div>
+    </div>
+    <!-- 分頁 -->
+
+    <h1>你也可以做到</h1>
+    <div class="container-clock">
+        <div class="datetime">
+            <div class="time">
+                <span id="hour">00</span>:
+                <span id="minutes">00</span>:
+                <span id="seconds">00</span>
+                <span id="period">AM</span>
+            </div>
+            <div class="date">
+                <span id="dayname">星期</span>,
+                <span id="month">月</span>
+                <span id="daynum">00</span>日,
+                <span id="year">year</span>年
+            </div>
+        </div>
     </div>
     <footer style="display: flex;background-color: gray; border-top:1px solid rgb(41, 40, 40) ;">
         <div class="f1" style="margin-left: 10px;">
@@ -199,4 +219,5 @@
     });
 </script>
 <script src="js/isotope.js"></script>
+<script src="js/clock.js"></script>
 </html>
