@@ -9,7 +9,8 @@
     <!-- ^css -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <!-- ^JavaScript -->
-    
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- css -->
     <link rel="stylesheet" href="css/index.css">
     <!-- AOS -->
@@ -40,161 +41,177 @@
     </style>
 </head>
 <body onload="startTime()">
-    <!-- nav -->
-    <div class="nav">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a href="#" style="text-decoration: none; color: black; width: 100px;">e 起學程式 1x school</a>
-            <button type="button" class="navbar-toggler" beta-bs-toggle="collapse" deta-bs-target="#navDropdown2">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- ul -->
-            <div class="collapse navbar-collapse" id="navDropdown2">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href=" https://networkkenny.github.io/1x-scool.github.io/1x school/class.html">熱門課程</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">架站知識</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">關於我們</a>
-                    </li>
-                    
-                    <!-- 下拉式選單 Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">bootstrap</a>
-    
-                        <!-- 下拉式選單選項 Dropdown items -->
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">簡介</a></li>
-                            <li><a class="dropdown-item" href="#">使用</a></li>
-                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">程式</a>
-    
-                                <!-- 子選單Level 2 -->
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">class</a></li>
-                                    <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">運作原理</a>
-    
-                                        <!-- 子選單Level 3 -->
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">1</a></li>
-                                            <li><a class="dropdown-item" href="#">2</a></li>
-    
-                                    </li>
-                                    </ul>
-                            </li>
-                            </ul>
-    
-                            
-                    </li>
-                    
-                </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
+    <!-- header -->
+    <header>
+        <a href="#" class="logo"> E起學程式</a>
+        <div id="menu-bar" class="fas fa-bars"></div>
+            <nav class="navbar">
+                <a href="#home">home</a>
+                <a href="#content">課程</a>
+                <a href="#news">新聞</a>
+                <a href="#collapse">小問答</a>
+                <a href="#cdn">小密技</a>
+                <a href="#filters">課程篩選</a>
+                <a href="#poject">實例</a>
+            </nav>
+    </header>
     <!-- 網頁內容 -->
-    <div class="ctn jumbotron text-center">
+    <div class="ctn jumbotron text-center" id="home">
         <h1>1<span>x</span> 學院</h1>
         <p style="font-size: 20px;">帶你學到會</p>
     </div>
-    <div class="all-md" style="display: flex;">
-        <div class="col-md-4">
-            <img src="img/solution-01.png" alt="" width="400px">
-            <p style="font-size: 30px; margin-left: 150px;">有系統的教學</p>
+    <div id="content">
+        <div class="all-md" style="display: flex;" id="pic">
+            <div class="col-md-4">
+                <img src="img/solution-01.png" alt="" width="400px">
+                <p style="font-size: 30px; margin-left: 150px;">有系統的教學</p>
+            </div>
+            <div class="col-md-4">
+                <img src="img/5e9ff152a9ffe65954ab249d.png" alt="" width="300px" height="310px" style="margin-left: 50px;">
+                <p style="font-size: 30px; margin-left: 150px;">淺顯易懂</p>
+            </div>
+            <div class="col-md-4">
+                <img src="img/下載.jpg" alt="" width="440px" height="310px">
+                <p style="font-size: 30px; margin-left: 170px;">自製教材</p>
+            </div>
         </div>
-        <div class="col-md-4">
-            <img src="img/5e9ff152a9ffe65954ab249d.png" alt="" width="300px" height="310px" style="margin-left: 50px;">
-            <p style="font-size: 30px; margin-left: 150px;">淺顯易懂</p>
-        </div>
-        <div class="col-md-4">
-            <img src="img/下載.jpg" alt="" width="440px" height="310px">
-            <p style="font-size: 30px; margin-left: 170px;">自製教材</p>
+        <div class="container" id="AOS">
+            <div class="box" data-aos="zoom-in">
+                <img src="img/0.jpg" alt="">
+                <div class="box-menu">
+                    
+                    <h3>帶你學到會</h3>
+                    <p>線上學習人數已達100000人</p>
+                    <a href="#">來去看看</a>
+                </div>
+            </div>
+            <div class="box" data-aos="fade-up">
+                <img src="img/html1.jpg" alt="">
+                <div class="box-menu" >
+                    
+                    <h3>html</h3>
+                    <p>建造網頁架構</p>
+                    <a href="#">來去看看</a>
+                </div>
+            </div>
+            <div class="box" data-aos="fade-right">
+                <img src="img/css1.jpg" alt="">
+                <div class="box-menu" >
+                    
+                    <h3>css</h3>
+                    <p>美化您的網頁</p>
+                    <a href="#">來去看看</a>
+                </div>
+            </div>
+            <div class="box" data-aos="flip-right">
+                <img src="img/1_kv85A-q8mqKQW56x8vrn7g.gif" alt="">
+                <div class="box-menu" >
+                    
+                    <h3>JavaScript</h3>
+                    <p>讓網頁栩栩如生</p>
+                    <a href="#">來去看看</a>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="container">
-        <div class="box" data-aos="zoom-in">
-            <img src="img/0.jpg" alt="">
-            <div class="box-menu">
-                
-                <h3>帶你學到會</h3>
-                <p>線上學習人數已達100000人</p>
-                <a href="#">來去看看</a>
-            </div>
+    <!-- 分頁 -->
+    <div class="page-container" id="news">
+        <h1>學院新聞</h1>
+        <!-- nav page -->
+        <div class="nav nav-tabs nav-justified">
+            <!-- button1 -->
+            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#menu1" aria-selected="true">
+                最新
+            </button>
+            <!-- button2 -->
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#menu2" aria-selected="false">
+                熱門
+            </button>
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#menu3" aria-selected="false">
+                程式語言
+            </button>
         </div>
-        <div class="box" data-aos="fade-up">
-            <img src="img/html1.jpg" alt="">
-            <div class="box-menu" >
-                
-                <h3>html</h3>
-                <p>建造網頁架構</p>
-                <a href="#">來去看看</a>
+        <!-- content -->
+        <div class="tab-content">
+            <!-- no.1 content -->
+            <div class="tab-pane fade show active" id="menu1">
+                <h3>最新消息</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, repellat Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, consectetur.</p>
             </div>
-        </div>
-        <div class="box" data-aos="fade-right">
-            <img src="img/css1.jpg" alt="">
-            <div class="box-menu" >
-                
-                <h3>css</h3>
-                <p>美化您的網頁</p>
-                <a href="#">來去看看</a>
+            <!-- no.2 content -->
+            <div class="tab-pane fade" id="menu2">
+                <h3>熱門消息</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque, consequatur!</p>
             </div>
-        </div>
-        <div class="box" data-aos="flip-right">
-            <img src="img/1_kv85A-q8mqKQW56x8vrn7g.gif" alt="">
-            <div class="box-menu" >
-                
-                <h3>JavaScript</h3>
-                <p>讓網頁栩栩如生</p>
-                <a href="#">來去看看</a>
+            <!-- no.3 content -->
+            <div class="tab-pane fade" id="menu3">
+                <h3>程式語言</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi excepturi deserunt magnam?</p>
             </div>
         </div>
     </div>
-    <div class="container">
+    <div id="collapse">
+        <h2>school Q&A</h2>
+        <div id="q1">請問JQuery&JavaScript的差異？</div>
+        <div id="a1">jquery是JS的Library，透過簡單的jquery程式就可以執行JavaScript複雜的程式喔！<a href="#">詳細資料</a></div>
+        <br>
+        <br>
+        <div id="q2">請問有沒有辦法可以讓我的朋友看到我設計的網站？</div>
+        <div id="a2">有的。其實用git hub就可以免費發布你的網站了！<a href="https://github.com/" target="_blank">github</a>         <a href="#">詳細資料</a></div>
+        <br>
+        <br>
+        <div id="q3">請問bootstrap是蝦米？</div>
+        <div id="a3">bootstrap是結合了多人的心血製作而成的，它可以讓我們只要運用HTML裡的class就可以做到css程式的東西。<a href="#">詳細資料</a></div>
+        <br>
+        <br>
+    </div>
+    <!-- list -->
+    <div class="container2" id="cdn">
         <h3>架站小工具</h3>
         <ul>
             <li><a href="https://www.getbootstrap.com" target="_blank">bootstrap</a></li>
             <li><a href="https://www.cdnjs.com" target="_blank">cdn</a></li>
         </ul>
     </div>
-    <div class="filters">
-        <h4><b>課程篩選器</b></h4>
-        <button class="button" data-filter=".html">HTML</button>
-        <button class="button" data-filter=".css">CSS</button>
-        <button class="button" data-filter=".js">JavaScript</button>
+    <div id="filters">
+        <!-- isotope -->
+        <div class="filters">
+            <h4><b>課程篩選器</b></h4>
+            <button class="button" data-filter=".html">HTML</button>
+            <button class="button" data-filter=".css">CSS</button>
+            <button class="button" data-filter=".js">JavaScript</button>
 
+        </div>
+        <!-- pic -->
+        <div class="grid">
+            <div class="items html"><img src="img/html1.jpg" alt=""></div>
+            <div class="items js"><img src="img/javascript1.png" alt=""></div>
+            <div class="items html"><img src="img/html2.png" alt=""></div>
+            <div class="items css"><img src="img/css1.jpg" alt=""></div>
+            <div class="items js"><img src="img/javascript2.jpg" alt=""></div>
+            <div class="items css"><img src="img/css2.jpeg" alt=""></div>
+            <div class="items html"><img src="img/html3.png" alt=""></div>
+            <div class="items css"><img src="img/css3.jpg" alt=""></div>
+            <div class="items js"><img src="img/javascript3.jpg" alt=""></div>
+        </div>
     </div>
-    <!-- pic -->
-    <div class="grid">
-        <div class="items html"><img src="img/html1.jpg" alt=""></div>
-        <div class="items js"><img src="img/javascript1.png" alt=""></div>
-        <div class="items html"><img src="img/html2.png" alt=""></div>
-        <div class="items css"><img src="img/css1.jpg" alt=""></div>
-        <div class="items js"><img src="img/javascript2.jpg" alt=""></div>
-        <div class="items css"><img src="img/css2.jpeg" alt=""></div>
-        <div class="items html"><img src="img/html3.png" alt=""></div>
-        <div class="items css"><img src="img/css3.jpg" alt=""></div>
-        <div class="items js"><img src="img/javascript3.jpg" alt=""></div>
-    </div>
-    <!-- 分頁 -->
 
-    <h1>你也可以做到</h1>
-    <div class="container-clock">
-        <div class="datetime">
-            <div class="time">
-                <span id="hour">00</span>:
-                <span id="minutes">00</span>:
-                <span id="seconds">00</span>
-                <span id="period">AM</span>
-            </div>
-            <div class="date">
-                <span id="dayname">星期</span>,
-                <span id="month">月</span>
-                <span id="daynum">00</span>日,
-                <span id="year">year</span>年
+    <div id="poject">
+        <h1>你也可以做到</h1>
+        <div class="container-clock">
+            <div class="datetime">
+                <div class="time">
+                    <span id="hour">00</span>:
+                    <span id="minutes">00</span>:
+                    <span id="seconds">00</span>
+                    <span id="period">AM</span>
+                </div>
+                <div class="date">
+                    <span id="dayname">星期</span>,
+                    <span id="month">月</span>
+                    <span id="daynum">00</span>日,
+                    <span id="year">year</span>年
+                </div>
             </div>
         </div>
     </div>
@@ -220,4 +237,17 @@
 </script>
 <script src="js/isotope.js"></script>
 <script src="js/clock.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#q1").click(function(){
+            $("#a1").slideToggle(1000);
+        })
+        $("#q2").click(function(){
+            $("#a2").slideToggle(1000);
+        })
+        $("#q3").click(function(){
+            $("#a3").slideToggle(1000);
+        })
+    })
+</script>
 </html>
