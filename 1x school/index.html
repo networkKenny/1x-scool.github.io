@@ -17,28 +17,21 @@
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- datatables -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
+  
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
+
     <!-- JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- datatables -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
+  
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
     <!-- isotope -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
     <title>1x school</title>
-    <!-- easy css -->
-    <style>
-        *{
-            transition: 0.4s;
-        }
-        .navbar-nav li:hover>ul.dropdown-menu{
-            display: block;
-        }
-        .dropdown-submenu{
-            position: relative;
-        }
-        .dropdown-submenu>.dropdown-menu{
-            top: 0%;
-            left: 100%;
-            margin-top: -6px;
-        }
-    </style>
+    
 </head>
 <body onload="startTime()">
     <!-- header -->
@@ -50,6 +43,7 @@
                 <a href="#content">課程</a>
                 <a href="#news">新聞</a>
                 <a href="#collapse">小問答</a>
+                <a href="#datatable">所有課程</a>
                 <a href="#cdn">小密技</a>
                 <a href="#filters">課程篩選</a>
                 <a href="#poject">實例</a>
@@ -165,6 +159,34 @@
         <br>
         <br>
     </div>
+    <!-- 課程 -->
+    <div class="datatable" id="datatable">
+        <h2>所有課程</h2>
+        <table id="table_id" class="display">
+            <thead>
+                <tr>
+                    <th>課程編號</th>
+                    <th>課程名稱</th>
+                    <th>程式語言</th>
+                    <th>簡介</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><a href="class.html">HTML初學(基本標籤)</a></td>
+                    <th>HTML</th>
+                    <th>本集將介紹html的基本標籤，包括p a h1.....</th>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>HTML初學(a連結)</td>
+                    <th>HTML</th>
+                    <th>本集將介紹a連結的更多應用方式</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
     <!-- list -->
     <div class="container2" id="cdn">
         <h3>架站小工具</h3>
@@ -252,5 +274,162 @@
             $("#a3").slideToggle(1000);
         })
     })
+    $(document).ready( function () {
+        $('#table_id').DataTable({
+            // chinese
+            "language":{
+    "processing": "處理中...",
+    "loadingRecords": "載入中...",
+    "lengthMenu": "顯示 _MENU_ 項結果",
+    "zeroRecords": "沒有符合的結果",
+    "info": "顯示第 _START_ 至 _END_ 項結果，共 _TOTAL_ 項",
+    "infoEmpty": "顯示第 0 至 0 項結果，共 0 項",
+    "infoFiltered": "(從 _MAX_ 項結果中過濾)",
+    "search": "搜尋:",
+    "paginate": {
+        "first": "第一頁",
+        "previous": "上一頁",
+        "next": "下一頁",
+        "last": "最後一頁"
+    },
+    "aria": {
+        "sortAscending": ": 升冪排列",
+        "sortDescending": ": 降冪排列"
+    },
+    "emptyTable": "目前沒有資料",
+    "datetime": {
+        "previous": "上一頁",
+        "next": "下一頁",
+        "hours": "時",
+        "minutes": "分",
+        "seconds": "秒",
+        "amPm": [
+            "上午",
+            "下午"
+        ]
+    },
+    "searchBuilder": {
+        "add": "新增條件",
+        "condition": "條件",
+        "deleteTitle": "刪除過濾條件",
+        "button": {
+            "_": "複合查詢 (%d)",
+            "0": "複合查詢"
+        },
+        "clearAll": "清空",
+        "conditions": {
+            "array": {
+                "contains": "含有",
+                "empty": "為空",
+                "equals": "等於",
+                "not": "不為",
+                "notEmpty": "不為空"
+            },
+            "date": {
+                "after": "大於",
+                "before": "小於",
+                "between": "在其中",
+                "empty": "為空",
+                "equals": "等於",
+                "not": "不為",
+                "notBetween": "不在其中",
+                "notEmpty": "不為空"
+            },
+            "number": {
+                "between": "在其中",
+                "empty": "為空",
+                "equals": "等於",
+                "gt": "大於",
+                "gte": "大於等於",
+                "lt": "小於",
+                "lte": "小於等於",
+                "not": "不為",
+                "notBetween": "不在其中",
+                "notEmpty": "不為空"
+            },
+            "string": {
+                "contains": "含有",
+                "empty": "為空",
+                "endsWith": "字尾為",
+                "equals": "等於",
+                "not": "不為",
+                "notEmpty": "不為空",
+                "startsWith": "字首為"
+            }
+        },
+        "data": "欄位",
+        "leftTitle": "群組條件",
+        "logicAnd": "且",
+        "logicOr": "或",
+        "rightTitle": "取消群組",
+        "title": {
+            "_": "複合查詢 (%d)",
+            "0": "複合查詢"
+        },
+        "value": "內容"
+    },
+    "editor": {
+        "close": "關閉",
+        "create": {
+            "button": "新增",
+            "title": "建立新項目",
+            "submit": "建立"
+        },
+        "edit": {
+            "button": "編輯",
+            "title": "編輯項目",
+            "submit": "更新"
+        },
+        "remove": {
+            "button": "刪除",
+            "title": "刪除",
+            "submit": "刪除",
+            "confirm": {
+                "_": "您確定要刪除 %d 筆資料嗎？",
+                "1": "您確定要刪除 %d 筆資料嗎？"
+            }
+        },
+        "multi": {
+            "restore": "回復修改",
+            "title": "每行有不同的價值",
+            "info": "您選擇了多個項目，每項目都有不同的價值。如果您想所有選擇的項目都用同一個價值，可以在這裏輸入一個價值。要不然它們會保留原本各自的價值",
+            "noMulti": "此列不容許同時編輯多個項目"
+        },
+        "error": {
+            "system": "系統發生錯誤(更多資訊)"
+        }
+    },
+    "autoFill": {
+        "cancel": "取消"
+    },
+    "buttons": {
+        "copySuccess": {
+            "_": "複製了 %d 筆資料",
+            "1": "複製了 1 筆資料"
+        },
+        "copyTitle": "已經複製到剪貼簿",
+        "excel": "Excel",
+        "pdf": "PDF",
+        "print": "列印",
+        "copy": "複製"
+    },
+    "searchPanes": {
+        "collapse": {
+            "_": "搜尋面版 (%d)",
+            "0": "搜尋面版"
+        },
+        "emptyPanes": "沒搜尋面版",
+        "loadMessage": "載入搜尋面版中...",
+        "clearMessage": "清空"
+    },
+    "select": {
+        "rows": {
+            "_": "%d 列已選擇",
+            "1": "%d 列已選擇"
+        }
+    }
+} 
+        });
+    });
 </script>
 </html>
