@@ -31,3 +31,10 @@ function startTime(){
     updateTime();
     window.setInterval("updateTime()", 1);
 }
+let menu=document.querySelector("#menu-bar");
+let navbar=document.querySelector(".navbar");
+// 按下按鈕
+menu.onclick =() =>{
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
+}
