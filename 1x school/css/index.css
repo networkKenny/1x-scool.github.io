@@ -122,6 +122,10 @@ h2{
     font-size: 30px;
     padding: 10px;
 }
+/* datatable */
+.datatable{
+    background-color: white;
+}
 /* list */
 .container2 ul li{
     list-style: none;
